@@ -1,0 +1,28 @@
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.w-auto{
+    width: 20px;
+    height: 100px ;
+}
+
+.text-white{
+    color: white;
+}
+
+.bg-puprle-lite{
+    background-color: rgb(183, 6, 183)!important;
+}
+
+.bg-purple-dark{
+    background-color: rgb(71, 10, 71);
+}
