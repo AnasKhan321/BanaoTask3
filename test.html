@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test html </title>
+    <style>
+        .redcube{
+            background-color: red;
+            color: #fff;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            padding: 40px 0px ;
+            font-size: 40px;
+            font-weight: bold;
+            opacity: 0;
+            transition: 1s all ease-in-out;
+       
+        }
+        .show{
+            opacity: 1;
+      
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div  style="height: 100vh;" ></div>
+
+    <div class="redcube">
+
+        Scroll magic 
+
+    </div>
+
+
+    <div style="height: 350px;" ></div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+
+
+
+<script>
+    var controller = new ScrollMagic.Controller()
+    var scene = new ScrollMagic.Scene({
+        triggerElement : '.redcube'
+    }).setClassToggle('.redcube'  , 'show').addTo(controller)
+</script>
+
+
+</body>
+</html>
